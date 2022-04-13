@@ -16,7 +16,7 @@
         vkConnect.sendPromise('VKWebAppGetUserInfo')
             .then(data => {
                 viewer = data;
-
+                getToken();
 
             });
       }
